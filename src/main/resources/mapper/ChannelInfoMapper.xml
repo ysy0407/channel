@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dongxin.channel.mapper.ChannelInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.dongxin.channel.domain.ChannelInfo" >
+    <id column="chcode" property="chcode" jdbcType="VARCHAR" />
+    <result column="secret" property="secret" jdbcType="VARCHAR" />
+    <result column="name" property="name" jdbcType="VARCHAR" />
+    <result column="chname" property="chname" jdbcType="VARCHAR" />
+    <result column="nameqc" property="nameqc" jdbcType="VARCHAR" />
+    <result column="companyname" property="companyname" jdbcType="VARCHAR" />
+    <result column="companynameqc" property="companynameqc" jdbcType="VARCHAR" />
+    <result column="url" property="url" jdbcType="VARCHAR" />
+    <result column="chtype" property="chtype" jdbcType="INTEGER" />
+    <result column="status" property="status" jdbcType="INTEGER" />
+    <result column="sfpid" property="sfpid" jdbcType="INTEGER" />
+    <result column="queueident" property="queueident" jdbcType="INTEGER" />
+    <result column="complexinterval" property="complexinterval" jdbcType="INTEGER" />
+    <result column="mailrecvier" property="mailrecvier" jdbcType="VARCHAR" />
+    <result column="pchcode" property="pchcode" jdbcType="VARCHAR" />
+    <result column="pname" property="pname" jdbcType="VARCHAR" />
+    <result column="isparent" property="isparent" jdbcType="INTEGER" />
+    <result column="isipidentify" property="isipidentify" jdbcType="INTEGER" />
+    <result column="ipaddress" property="ipaddress" jdbcType="VARCHAR" />
+    <result column="issms" property="issms" jdbcType="INTEGER" />
+    <result column="smsmobile" property="smsmobile" jdbcType="VARCHAR" />
+    <result column="chhtid" property="chhtid" jdbcType="INTEGER" />
+    <result column="cachetimer" property="cachetimer" jdbcType="INTEGER" />
+    <result column="nomoneycache" property="nomoneycache" jdbcType="INTEGER" />
+    <result column="qjcache" property="qjcache" jdbcType="INTEGER" />
+    <result column="inserttime" property="inserttime" jdbcType="VARCHAR" />
+    <result column="level" property="level" jdbcType="TINYINT" />
+    <result column="dgords" property="dgords" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    chcode, secret, name, chname, nameqc, companyname, companynameqc, url, chtype, status, 
+    sfpid, queueident, complexinterval, mailrecvier, pchcode, pname, isparent, isipidentify, 
+    ipaddress, issms, smsmobile, chhtid, cachetimer, nomoneycache, qjcache, inserttime, 
+    level, dgords
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.String" >
+    select 
+    <include refid="Base_Column_List" />
+    from channelinfo
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from channelinfo
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dongxin.channel.domain.ChannelInfo" >
+    insert into channelinfo (chcode, secret, name, 
+      chname, nameqc, companyname, 
+      companynameqc, url, chtype, 
+      status, sfpid, queueident, 
+      complexinterval, mailrecvier, pchcode, 
+      pname, isparent, isipidentify, 
+      ipaddress, issms, smsmobile, 
+      chhtid, cachetimer, nomoneycache, 
+      qjcache, inserttime, level, 
+      dgords)
+    values (#{chcode,jdbcType=VARCHAR}, #{secret,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
+      #{chname,jdbcType=VARCHAR}, #{nameqc,jdbcType=VARCHAR}, #{companyname,jdbcType=VARCHAR}, 
+      #{companynameqc,jdbcType=VARCHAR}, #{url,jdbcType=VARCHAR}, #{chtype,jdbcType=INTEGER}, 
+      #{status,jdbcType=INTEGER}, #{sfpid,jdbcType=INTEGER}, #{queueident,jdbcType=INTEGER}, 
+      #{complexinterval,jdbcType=INTEGER}, #{mailrecvier,jdbcType=VARCHAR}, #{pchcode,jdbcType=VARCHAR}, 
+      #{pname,jdbcType=VARCHAR}, #{isparent,jdbcType=INTEGER}, #{isipidentify,jdbcType=INTEGER}, 
+      #{ipaddress,jdbcType=VARCHAR}, #{issms,jdbcType=INTEGER}, #{smsmobile,jdbcType=VARCHAR}, 
+      #{chhtid,jdbcType=INTEGER}, #{cachetimer,jdbcType=INTEGER}, #{nomoneycache,jdbcType=INTEGER}, 
+      #{qjcache,jdbcType=INTEGER}, #{inserttime,jdbcType=VARCHAR}, #{level,jdbcType=TINYINT}, 
+      #{dgords,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dongxin.channel.domain.ChannelInfo" >
+    insert into channelinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="chcode != null" >
+        chcode,
+      </if>
+      <if test="secret != null" >
+        secret,
+      </if>
+      <if test="name != null" >
+        name,
+      </if>
+      <if test="chname != null" >
+        chname,
+      </if>
+      <if test="nameqc != null" >
+        nameqc,
+      </if>
+      <if test="companyname != null" >
+        companyname,
+      </if>
+      <if test="companynameqc != null" >
+        companynameqc,
+      </if>
+      <if test="url != null" >
+        url,
+      </if>
+      <if test="chtype != null" >
+        chtype,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="sfpid != null" >
+        sfpid,
+      </if>
+      <if test="queueident != null" >
+        queueident,
+      </if>
+      <if test="complexinterval != null" >
+        complexinterval,
+      </if>
+      <if test="mailrecvier != null" >
+        mailrecvier,
+      </if>
+      <if test="pchcode != null" >
+        pchcode,
+      </if>
+      <if test="pname != null" >
+        pname,
+      </if>
+      <if test="isparent != null" >
+        isparent,
+      </if>
+      <if test="isipidentify != null" >
+        isipidentify,
+      </if>
+      <if test="ipaddress != null" >
+        ipaddress,
+      </if>
+      <if test="issms != null" >
+        issms,
+      </if>
+      <if test="smsmobile != null" >
+        smsmobile,
+      </if>
+      <if test="chhtid != null" >
+        chhtid,
+      </if>
+      <if test="cachetimer != null" >
+        cachetimer,
+      </if>
+      <if test="nomoneycache != null" >
+        nomoneycache,
+      </if>
+      <if test="qjcache != null" >
+        qjcache,
+      </if>
+      <if test="inserttime != null" >
+        inserttime,
+      </if>
+      <if test="level != null" >
+        level,
+      </if>
+      <if test="dgords != null" >
+        dgords,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="chcode != null" >
+        #{chcode,jdbcType=VARCHAR},
+      </if>
+      <if test="secret != null" >
+        #{secret,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="chname != null" >
+        #{chname,jdbcType=VARCHAR},
+      </if>
+      <if test="nameqc != null" >
+        #{nameqc,jdbcType=VARCHAR},
+      </if>
+      <if test="companyname != null" >
+        #{companyname,jdbcType=VARCHAR},
+      </if>
+      <if test="companynameqc != null" >
+        #{companynameqc,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="chtype != null" >
+        #{chtype,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sfpid != null" >
+        #{sfpid,jdbcType=INTEGER},
+      </if>
+      <if test="queueident != null" >
+        #{queueident,jdbcType=INTEGER},
+      </if>
+      <if test="complexinterval != null" >
+        #{complexinterval,jdbcType=INTEGER},
+      </if>
+      <if test="mailrecvier != null" >
+        #{mailrecvier,jdbcType=VARCHAR},
+      </if>
+      <if test="pchcode != null" >
+        #{pchcode,jdbcType=VARCHAR},
+      </if>
+      <if test="pname != null" >
+        #{pname,jdbcType=VARCHAR},
+      </if>
+      <if test="isparent != null" >
+        #{isparent,jdbcType=INTEGER},
+      </if>
+      <if test="isipidentify != null" >
+        #{isipidentify,jdbcType=INTEGER},
+      </if>
+      <if test="ipaddress != null" >
+        #{ipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="issms != null" >
+        #{issms,jdbcType=INTEGER},
+      </if>
+      <if test="smsmobile != null" >
+        #{smsmobile,jdbcType=VARCHAR},
+      </if>
+      <if test="chhtid != null" >
+        #{chhtid,jdbcType=INTEGER},
+      </if>
+      <if test="cachetimer != null" >
+        #{cachetimer,jdbcType=INTEGER},
+      </if>
+      <if test="nomoneycache != null" >
+        #{nomoneycache,jdbcType=INTEGER},
+      </if>
+      <if test="qjcache != null" >
+        #{qjcache,jdbcType=INTEGER},
+      </if>
+      <if test="inserttime != null" >
+        #{inserttime,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null" >
+        #{level,jdbcType=TINYINT},
+      </if>
+      <if test="dgords != null" >
+        #{dgords,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dongxin.channel.domain.ChannelInfo" >
+    update channelinfo
+    <set >
+      <if test="secret != null" >
+        secret = #{secret,jdbcType=VARCHAR},
+      </if>
+      <if test="name != null" >
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="chname != null" >
+        chname = #{chname,jdbcType=VARCHAR},
+      </if>
+      <if test="nameqc != null" >
+        nameqc = #{nameqc,jdbcType=VARCHAR},
+      </if>
+      <if test="companyname != null" >
+        companyname = #{companyname,jdbcType=VARCHAR},
+      </if>
+      <if test="companynameqc != null" >
+        companynameqc = #{companynameqc,jdbcType=VARCHAR},
+      </if>
+      <if test="url != null" >
+        url = #{url,jdbcType=VARCHAR},
+      </if>
+      <if test="chtype != null" >
+        chtype = #{chtype,jdbcType=INTEGER},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="sfpid != null" >
+        sfpid = #{sfpid,jdbcType=INTEGER},
+      </if>
+      <if test="queueident != null" >
+        queueident = #{queueident,jdbcType=INTEGER},
+      </if>
+      <if test="complexinterval != null" >
+        complexinterval = #{complexinterval,jdbcType=INTEGER},
+      </if>
+      <if test="mailrecvier != null" >
+        mailrecvier = #{mailrecvier,jdbcType=VARCHAR},
+      </if>
+      <if test="pchcode != null" >
+        pchcode = #{pchcode,jdbcType=VARCHAR},
+      </if>
+      <if test="pname != null" >
+        pname = #{pname,jdbcType=VARCHAR},
+      </if>
+      <if test="isparent != null" >
+        isparent = #{isparent,jdbcType=INTEGER},
+      </if>
+      <if test="isipidentify != null" >
+        isipidentify = #{isipidentify,jdbcType=INTEGER},
+      </if>
+      <if test="ipaddress != null" >
+        ipaddress = #{ipaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="issms != null" >
+        issms = #{issms,jdbcType=INTEGER},
+      </if>
+      <if test="smsmobile != null" >
+        smsmobile = #{smsmobile,jdbcType=VARCHAR},
+      </if>
+      <if test="chhtid != null" >
+        chhtid = #{chhtid,jdbcType=INTEGER},
+      </if>
+      <if test="cachetimer != null" >
+        cachetimer = #{cachetimer,jdbcType=INTEGER},
+      </if>
+      <if test="nomoneycache != null" >
+        nomoneycache = #{nomoneycache,jdbcType=INTEGER},
+      </if>
+      <if test="qjcache != null" >
+        qjcache = #{qjcache,jdbcType=INTEGER},
+      </if>
+      <if test="inserttime != null" >
+        inserttime = #{inserttime,jdbcType=VARCHAR},
+      </if>
+      <if test="level != null" >
+        level = #{level,jdbcType=TINYINT},
+      </if>
+      <if test="dgords != null" >
+        dgords = #{dgords,jdbcType=TINYINT},
+      </if>
+    </set>
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dongxin.channel.domain.ChannelInfo" >
+    update channelinfo
+    set secret = #{secret,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      chname = #{chname,jdbcType=VARCHAR},
+      nameqc = #{nameqc,jdbcType=VARCHAR},
+      companyname = #{companyname,jdbcType=VARCHAR},
+      companynameqc = #{companynameqc,jdbcType=VARCHAR},
+      url = #{url,jdbcType=VARCHAR},
+      chtype = #{chtype,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      sfpid = #{sfpid,jdbcType=INTEGER},
+      queueident = #{queueident,jdbcType=INTEGER},
+      complexinterval = #{complexinterval,jdbcType=INTEGER},
+      mailrecvier = #{mailrecvier,jdbcType=VARCHAR},
+      pchcode = #{pchcode,jdbcType=VARCHAR},
+      pname = #{pname,jdbcType=VARCHAR},
+      isparent = #{isparent,jdbcType=INTEGER},
+      isipidentify = #{isipidentify,jdbcType=INTEGER},
+      ipaddress = #{ipaddress,jdbcType=VARCHAR},
+      issms = #{issms,jdbcType=INTEGER},
+      smsmobile = #{smsmobile,jdbcType=VARCHAR},
+      chhtid = #{chhtid,jdbcType=INTEGER},
+      cachetimer = #{cachetimer,jdbcType=INTEGER},
+      nomoneycache = #{nomoneycache,jdbcType=INTEGER},
+      qjcache = #{qjcache,jdbcType=INTEGER},
+      inserttime = #{inserttime,jdbcType=VARCHAR},
+      level = #{level,jdbcType=TINYINT},
+      dgords = #{dgords,jdbcType=TINYINT}
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </update>
+</mapper>

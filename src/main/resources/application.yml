@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active: dev
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.dongxin.channel.domain
+
+logging:
+  level:
+    com:
+      dongxin:
+        channel:
+          mapper: DEBUG
+#
+#log4j:
+#  logger:
+#    java:
+#      sql: debug,stdout
+#    org:
+#      apache:
+#        ibatis: debug,stdout

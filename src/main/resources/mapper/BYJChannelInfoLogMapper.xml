@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dongxin.channel.mapper.BYJChannelInfoLogMapper" >
+  <resultMap id="BaseResultMap" type="com.dongxin.channel.domain.BYJChannelInfoLog" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="chcode" property="chcode" jdbcType="VARCHAR" />
+    <result column="kkflag" property="kkflag" jdbcType="TINYINT" />
+    <result column="orderid" property="orderid" jdbcType="VARCHAR" />
+    <result column="srcorderid" property="srcorderid" jdbcType="VARCHAR" />
+    <result column="operators" property="operators" jdbcType="TINYINT" />
+    <result column="ftid" property="ftid" jdbcType="TINYINT" />
+    <result column="phone" property="phone" jdbcType="VARCHAR" />
+    <result column="provname" property="provname" jdbcType="VARCHAR" />
+    <result column="productid" property="productid" jdbcType="VARCHAR" />
+    <result column="runmoney" property="runmoney" jdbcType="DOUBLE" />
+    <result column="bdtime" property="bdtime" jdbcType="VARCHAR" />
+    <result column="totalmoney" property="totalmoney" jdbcType="DOUBLE" />
+    <result column="isdel" property="isdel" jdbcType="INTEGER" />
+    <result column="inserttime" property="inserttime" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, chcode, kkflag, orderid, srcorderid, operators, ftid, phone, provname, productid, 
+    runmoney, bdtime, totalmoney, isdel, inserttime
+  </sql>
+
+  <select id="selectBYJChannelLog" resultMap="BaseResultMap" parameterType="java.util.Map">
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM byjchannelinfolog
+    WHERE chcode=#{chcode,jdbcType=VARCHAR}
+    UNION ALL
+    SELECT
+    <include refid="Base_Column_List" />
+    FROM ${historyTable}
+    WHERE chcode=#{chcode,jdbcType=VARCHAR}
+    ORDER BY inserttime DESC
+    <if test="first == null or first == ''">
+      LIMIT 0,1
+    </if>
+  </select>
+  
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from byjchannelinfolog
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from byjchannelinfolog
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.dongxin.channel.domain.BYJChannelInfoLog" >
+    insert into byjchannelinfolog (id, chcode, kkflag, 
+      orderid, srcorderid, operators, 
+      ftid, phone, provname, 
+      productid, runmoney, bdtime, 
+      totalmoney, isdel, inserttime
+      )
+    values (#{id,jdbcType=INTEGER}, #{chcode,jdbcType=VARCHAR}, #{kkflag,jdbcType=TINYINT}, 
+      #{orderid,jdbcType=VARCHAR}, #{srcorderid,jdbcType=VARCHAR}, #{operators,jdbcType=TINYINT}, 
+      #{ftid,jdbcType=TINYINT}, #{phone,jdbcType=VARCHAR}, #{provname,jdbcType=VARCHAR}, 
+      #{productid,jdbcType=VARCHAR}, #{runmoney,jdbcType=DOUBLE}, #{bdtime,jdbcType=VARCHAR}, 
+      #{totalmoney,jdbcType=DOUBLE}, #{isdel,jdbcType=INTEGER}, #{inserttime,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.dongxin.channel.domain.BYJChannelInfoLog" >
+    insert into byjchannelinfolog
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="chcode != null" >
+        chcode,
+      </if>
+      <if test="kkflag != null" >
+        kkflag,
+      </if>
+      <if test="orderid != null" >
+        orderid,
+      </if>
+      <if test="srcorderid != null" >
+        srcorderid,
+      </if>
+      <if test="operators != null" >
+        operators,
+      </if>
+      <if test="ftid != null" >
+        ftid,
+      </if>
+      <if test="phone != null" >
+        phone,
+      </if>
+      <if test="provname != null" >
+        provname,
+      </if>
+      <if test="productid != null" >
+        productid,
+      </if>
+      <if test="runmoney != null" >
+        runmoney,
+      </if>
+      <if test="bdtime != null" >
+        bdtime,
+      </if>
+      <if test="totalmoney != null" >
+        totalmoney,
+      </if>
+      <if test="isdel != null" >
+        isdel,
+      </if>
+      <if test="inserttime != null" >
+        inserttime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="chcode != null" >
+        #{chcode,jdbcType=VARCHAR},
+      </if>
+      <if test="kkflag != null" >
+        #{kkflag,jdbcType=TINYINT},
+      </if>
+      <if test="orderid != null" >
+        #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="srcorderid != null" >
+        #{srcorderid,jdbcType=VARCHAR},
+      </if>
+      <if test="operators != null" >
+        #{operators,jdbcType=TINYINT},
+      </if>
+      <if test="ftid != null" >
+        #{ftid,jdbcType=TINYINT},
+      </if>
+      <if test="phone != null" >
+        #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="provname != null" >
+        #{provname,jdbcType=VARCHAR},
+      </if>
+      <if test="productid != null" >
+        #{productid,jdbcType=VARCHAR},
+      </if>
+      <if test="runmoney != null" >
+        #{runmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="bdtime != null" >
+        #{bdtime,jdbcType=VARCHAR},
+      </if>
+      <if test="totalmoney != null" >
+        #{totalmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="isdel != null" >
+        #{isdel,jdbcType=INTEGER},
+      </if>
+      <if test="inserttime != null" >
+        #{inserttime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dongxin.channel.domain.BYJChannelInfoLog" >
+    update byjchannelinfolog
+    <set >
+      <if test="chcode != null" >
+        chcode = #{chcode,jdbcType=VARCHAR},
+      </if>
+      <if test="kkflag != null" >
+        kkflag = #{kkflag,jdbcType=TINYINT},
+      </if>
+      <if test="orderid != null" >
+        orderid = #{orderid,jdbcType=VARCHAR},
+      </if>
+      <if test="srcorderid != null" >
+        srcorderid = #{srcorderid,jdbcType=VARCHAR},
+      </if>
+      <if test="operators != null" >
+        operators = #{operators,jdbcType=TINYINT},
+      </if>
+      <if test="ftid != null" >
+        ftid = #{ftid,jdbcType=TINYINT},
+      </if>
+      <if test="phone != null" >
+        phone = #{phone,jdbcType=VARCHAR},
+      </if>
+      <if test="provname != null" >
+        provname = #{provname,jdbcType=VARCHAR},
+      </if>
+      <if test="productid != null" >
+        productid = #{productid,jdbcType=VARCHAR},
+      </if>
+      <if test="runmoney != null" >
+        runmoney = #{runmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="bdtime != null" >
+        bdtime = #{bdtime,jdbcType=VARCHAR},
+      </if>
+      <if test="totalmoney != null" >
+        totalmoney = #{totalmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="isdel != null" >
+        isdel = #{isdel,jdbcType=INTEGER},
+      </if>
+      <if test="inserttime != null" >
+        inserttime = #{inserttime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dongxin.channel.domain.BYJChannelInfoLog" >
+    update byjchannelinfolog
+    set chcode = #{chcode,jdbcType=VARCHAR},
+      kkflag = #{kkflag,jdbcType=TINYINT},
+      orderid = #{orderid,jdbcType=VARCHAR},
+      srcorderid = #{srcorderid,jdbcType=VARCHAR},
+      operators = #{operators,jdbcType=TINYINT},
+      ftid = #{ftid,jdbcType=TINYINT},
+      phone = #{phone,jdbcType=VARCHAR},
+      provname = #{provname,jdbcType=VARCHAR},
+      productid = #{productid,jdbcType=VARCHAR},
+      runmoney = #{runmoney,jdbcType=DOUBLE},
+      bdtime = #{bdtime,jdbcType=VARCHAR},
+      totalmoney = #{totalmoney,jdbcType=DOUBLE},
+      isdel = #{isdel,jdbcType=INTEGER},
+      inserttime = #{inserttime,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

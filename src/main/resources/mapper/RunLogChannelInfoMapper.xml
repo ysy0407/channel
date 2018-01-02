@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dongxin.channel.mapper.RunLogChannelInfoMapper" >
+
+  <resultMap id="BaseResultMap" type="com.dongxin.channel.domain.RunLogChannelInfo" >
+    <id column="chcode" property="chcode" jdbcType="VARCHAR" />
+    <result column="initmoney" property="initmoney" jdbcType="DOUBLE" />
+    <result column="totalmoney" property="totalmoney" jdbcType="DOUBLE" />
+    <result column="minalarmmoney" property="minalarmmoney" jdbcType="DOUBLE" />
+    <result column="maxalarmmoney" property="maxalarmmoney" jdbcType="DOUBLE" />
+    <result column="bzjmoney" property="bzjmoney" jdbcType="DOUBLE" />
+    <result column="status" property="status" jdbcType="TINYINT" />
+    <result column="updatetime" property="updatetime" jdbcType="VARCHAR" />
+    <collection property="byjChannelInfoLogList" ofType="com.dongxin.channel.domain.BYJChannelInfoLog"
+                select="com.dongxin.channel.mapper.BYJChannelInfoLogMapper.selectBYJChannelLog"
+                column="{chcode=chcode, historyTable=historyTable, first=first}">
+    </collection>
+  </resultMap>
+  <sql id="Base_Column_List" >
+    chcode, initmoney, totalmoney, minalarmmoney, maxalarmmoney, bzjmoney, status, updatetime
+  </sql>
+  <select id="selectByChcode" resultMap="BaseResultMap" parameterType="java.util.Map" >
+    select 
+    <include refid="Base_Column_List" />, '${historyTable}' AS historyTable, '${first}' AS first
+    from runlogchannelinfo
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String" >
+    delete from runlogchannelinfo
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </delete>
+  <insert id="insert" parameterType="com.dongxin.channel.domain.RunLogChannelInfo" >
+    insert into runlogchannelinfo (chcode, initmoney, totalmoney, 
+      minalarmmoney, maxalarmmoney, bzjmoney, 
+      status, updatetime)
+    values (#{chcode,jdbcType=VARCHAR}, #{initmoney,jdbcType=DOUBLE}, #{totalmoney,jdbcType=DOUBLE}, 
+      #{minalarmmoney,jdbcType=DOUBLE}, #{maxalarmmoney,jdbcType=DOUBLE}, #{bzjmoney,jdbcType=DOUBLE}, 
+      #{status,jdbcType=TINYINT}, #{updatetime,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.dongxin.channel.domain.RunLogChannelInfo" >
+    insert into runlogchannelinfo
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="chcode != null" >
+        chcode,
+      </if>
+      <if test="initmoney != null" >
+        initmoney,
+      </if>
+      <if test="totalmoney != null" >
+        totalmoney,
+      </if>
+      <if test="minalarmmoney != null" >
+        minalarmmoney,
+      </if>
+      <if test="maxalarmmoney != null" >
+        maxalarmmoney,
+      </if>
+      <if test="bzjmoney != null" >
+        bzjmoney,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="updatetime != null" >
+        updatetime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="chcode != null" >
+        #{chcode,jdbcType=VARCHAR},
+      </if>
+      <if test="initmoney != null" >
+        #{initmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="totalmoney != null" >
+        #{totalmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="minalarmmoney != null" >
+        #{minalarmmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="maxalarmmoney != null" >
+        #{maxalarmmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="bzjmoney != null" >
+        #{bzjmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        #{updatetime,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.dongxin.channel.domain.RunLogChannelInfo" >
+    update runlogchannelinfo
+    <set >
+      <if test="initmoney != null" >
+        initmoney = #{initmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="totalmoney != null" >
+        totalmoney = #{totalmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="minalarmmoney != null" >
+        minalarmmoney = #{minalarmmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="maxalarmmoney != null" >
+        maxalarmmoney = #{maxalarmmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="bzjmoney != null" >
+        bzjmoney = #{bzjmoney,jdbcType=DOUBLE},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=TINYINT},
+      </if>
+      <if test="updatetime != null" >
+        updatetime = #{updatetime,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.dongxin.channel.domain.RunLogChannelInfo" >
+    update runlogchannelinfo
+    set initmoney = #{initmoney,jdbcType=DOUBLE},
+      totalmoney = #{totalmoney,jdbcType=DOUBLE},
+      minalarmmoney = #{minalarmmoney,jdbcType=DOUBLE},
+      maxalarmmoney = #{maxalarmmoney,jdbcType=DOUBLE},
+      bzjmoney = #{bzjmoney,jdbcType=DOUBLE},
+      status = #{status,jdbcType=TINYINT},
+      updatetime = #{updatetime,jdbcType=VARCHAR}
+    where chcode = #{chcode,jdbcType=VARCHAR}
+  </update>
+</mapper>
