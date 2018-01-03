@@ -84,10 +84,7 @@ public class HttpAspect {
     //获取响应的数据 returning = "object" 是等于 Object object
     @AfterReturning(returning = "object" , pointcut = "log() and !voidNotLog()")
     public void afterReturningLog(JoinPoint joinPoint, Object object){
-        /**
-         * 日志处理 登录,退出,修改密码
-         */
-//        joinPoint.getThis
+
         loger.info("response={}", object.toString());
     }
 

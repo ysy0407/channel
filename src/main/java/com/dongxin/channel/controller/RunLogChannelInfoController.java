@@ -26,12 +26,14 @@ public class RunLogChannelInfoController {
     @Autowired
     private RunLogChannelInfoService runLogChannelInfoService;
 
+    //通过渠道user的id获取其备用金最新动态
     @GetMapping("/getLastRunLog")
     public HttpResult getLastRunLog(@RequestParam("id") Integer id){
         ChannelUserLogin user = (ChannelUserLogin)HttpUtil.getSessionAttribute("user");
         return ResultUtil.success(runLogChannelInfoService.selectByChcode(user.getUsername()));
     }
 
+    //通过渠道user的id获取其所有的订单扣除日志
     @GetMapping("/getRunLog")
     public HttpResult getRunLog(@RequestParam("id") Integer id){
         ChannelUserLogin user = (ChannelUserLogin)HttpUtil.getSessionAttribute("user");

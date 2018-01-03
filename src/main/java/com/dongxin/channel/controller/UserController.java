@@ -33,7 +33,7 @@ public class UserController {
     private UserService userService;
 
     /**
-     * 登录 将用户名和密码解密,登录成功后存入到session中,username为key
+     * 登录 将用户名和密码解密,登录成功后存入到session中,user字段为key
      *
      * @param username 前端传来的用户名应当Base64加密
      * @param password 前端传来的密码应当先MD5加密,后Base64加密
