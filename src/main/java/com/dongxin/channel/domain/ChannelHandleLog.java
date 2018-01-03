@@ -13,6 +13,27 @@ public class ChannelHandleLog {
 
     private String inserttime;
 
+    public ChannelHandleLog(){}
+
+    public ChannelHandleLog(String username, String channelname, String logip, String handle) {
+        this.username = username;
+        this.channelname = channelname;
+        this.logip = logip;
+        this.handle = handle;
+    }
+
+    @Override
+    public String toString() {
+        return "ChannelHandleLog{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", channelname='" + channelname + '\'' +
+                ", logip='" + logip + '\'' +
+                ", handle='" + handle + '\'' +
+                ", inserttime='" + inserttime + '\'' +
+                '}';
+    }
+
     public Integer getId() {
         return id;
     }

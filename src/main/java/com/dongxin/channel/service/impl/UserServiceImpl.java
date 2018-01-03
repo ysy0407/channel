@@ -3,6 +3,7 @@ package com.dongxin.channel.service.impl;
 import com.dongxin.channel.domain.ChannelUserLogin;
 import com.dongxin.channel.exception.MyException;
 import com.dongxin.channel.mapper.ChannelUserLoginMapper;
+import com.dongxin.channel.myannotation.NeedLog;
 import com.dongxin.channel.myenum.MyEnum;
 import com.dongxin.channel.service.UserService;
 import com.dongxin.channel.util.Base64;
@@ -21,6 +22,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private ChannelUserLoginMapper channelUserLoginMapper;
 
+    @NeedLog(handleInfo = "登录")
     @Override
     public ChannelUserLogin selectByNameAndPWD(String username, String password) throws MyException {
         ChannelUserLogin user = new ChannelUserLogin();
@@ -35,6 +37,7 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @NeedLog(handleInfo = "修改密码")
     @Override
     public ChannelUserLogin changePWD(Integer id, String newPWD) throws MyException {
         ChannelUserLogin user = new ChannelUserLogin();

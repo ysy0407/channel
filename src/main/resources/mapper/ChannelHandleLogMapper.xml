@@ -33,9 +33,6 @@
   <insert id="insertSelective" parameterType="com.dongxin.channel.domain.ChannelHandleLog" >
     insert into channel_handle_log
     <trim prefix="(" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        id,
-      </if>
       <if test="username != null" >
         username,
       </if>
@@ -48,14 +45,9 @@
       <if test="handle != null" >
         handle,
       </if>
-      <if test="inserttime != null" >
         inserttime,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
-      <if test="id != null" >
-        #{id,jdbcType=INTEGER},
-      </if>
       <if test="username != null" >
         #{username,jdbcType=VARCHAR},
       </if>
@@ -68,9 +60,7 @@
       <if test="handle != null" >
         #{handle,jdbcType=VARCHAR},
       </if>
-      <if test="inserttime != null" >
-        #{inserttime,jdbcType=VARCHAR},
-      </if>
+      NOW(),
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.dongxin.channel.domain.ChannelHandleLog" >
