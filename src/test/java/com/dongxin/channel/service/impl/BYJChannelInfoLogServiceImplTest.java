@@ -18,11 +18,11 @@ public class BYJChannelInfoLogServiceImplTest {
 
     @Test
     public void selectLastUpdate() throws Exception {
-        List<BYJChannelInfoLog> list = service.selectBYJChannelLog("testcheshi");
-        for (BYJChannelInfoLog byj : list) {
-            System.out.println(byj);
-
-        }
+//        List<BYJChannelInfoLog> list = service.selectBYJChannelLog("testcheshi");
+//        for (BYJChannelInfoLog byj : list) {
+//            System.out.println(byj);
+//
+//        }
     }
 
 

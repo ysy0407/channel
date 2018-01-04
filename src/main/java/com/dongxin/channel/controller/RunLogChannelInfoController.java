@@ -34,10 +34,10 @@ public class RunLogChannelInfoController {
     }
 
     //通过渠道user的id获取其所有的订单扣除日志
-    @GetMapping("/getRunLog")
-    public HttpResult getRunLog(@RequestParam("id") Integer id){
-        ChannelUserLogin user = (ChannelUserLogin)HttpUtil.getSessionAttribute("user");
-        return ResultUtil.success(runLogChannelInfoService.selectByChcode(user.getUsername(), "all"));
-    }
+//    @GetMapping("/getRunLog")
+//    public HttpResult getRunLog(@RequestParam("id") Integer id){
+//        ChannelUserLogin user = (ChannelUserLogin)HttpUtil.getSessionAttribute("user");
+//        return ResultUtil.success(runLogChannelInfoService.selectByChcode(user.getUsername(), "all"));
+//    }
 
 }

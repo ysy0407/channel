@@ -1,12 +1,11 @@
 package com.dongxin.channel.service;
 
 import com.dongxin.channel.domain.BYJChannelInfoLog;
-
-import java.util.List;
+import com.github.pagehelper.PageInfo;
 
 public interface BYJChannelInfoLogService {
 
-    List<BYJChannelInfoLog> selectBYJChannelLog(String chcode);
+    PageInfo<BYJChannelInfoLog> selectBYJChannelLog(Integer id, String startDate, String endDate, int pageNo, int pageSize);
 
     BYJChannelInfoLog selectByPrimaryKey(Integer id);
 

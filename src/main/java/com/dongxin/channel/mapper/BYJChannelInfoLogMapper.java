@@ -1,13 +1,14 @@
 package com.dongxin.channel.mapper;
 
 import com.dongxin.channel.domain.BYJChannelInfoLog;
+import com.github.pagehelper.Page;
 
-import java.util.List;
 import java.util.Map;
 
 public interface BYJChannelInfoLogMapper {
 
-    List<BYJChannelInfoLog> selectBYJChannelLog(Map<String, Object> map);
+    //分页
+    Page<BYJChannelInfoLog> selectBYJChannelLog(Map<String, Object> map);
 
     int deleteByPrimaryKey(Integer id);
 

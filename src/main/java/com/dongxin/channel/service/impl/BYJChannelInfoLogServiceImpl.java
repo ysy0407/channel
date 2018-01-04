@@ -1,15 +1,18 @@
 package com.dongxin.channel.service.impl;
 
 import com.dongxin.channel.domain.BYJChannelInfoLog;
+import com.dongxin.channel.domain.ChannelUserLogin;
+import com.github.pagehelper.PageInfo;
 import com.dongxin.channel.mapper.BYJChannelInfoLogMapper;
 import com.dongxin.channel.service.BYJChannelInfoLogService;
+import com.dongxin.channel.util.HttpUtil;
+import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -25,18 +28,23 @@ public class BYJChannelInfoLogServiceImpl implements BYJChannelInfoLogService {
     private BYJChannelInfoLogMapper byjChannelInfoLogMapper;
 
     @Override
-    public List<BYJChannelInfoLog> selectBYJChannelLog(String chcode) {
+    public PageInfo<BYJChannelInfoLog> selectBYJChannelLog(Integer id, String startDate, String endDate, int pageNo, int pageSize) {
         //获取当前时间的年份最后两个字段，月份，拼接作为需要联查的当月表
-        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
-        String date =  sdf.format( new Date());
-        String historyTable = "byjchannelinfolog"+date.substring(2,4)+date.substring(5,7);
+        String historyTable = "byjchannelinfolog"+startDate.substring(2,4)+startDate.substring(5,7);
         Map<String, Object> map = new HashMap<String, Object>();
-        map.put("chcode", chcode);
+        //通过id获取缓存中的user信息
+        ChannelUserLogin user = (ChannelUserLogin)HttpUtil.getSessionAttribute("user");
+        map.put("chcode", user.getUsername());
         map.put("historyTable", historyTable);
-        //当first不为null就会只查第一个
-        map.put("first", "first");
-//        List<BYJChannelInfoLog> list = mapper.selectLastUpdate(map);
-        return byjChannelInfoLogMapper.selectBYJChannelLog(map);
+        map.put("startDate", startDate);
+        map.put("endDate", endDate);
+
+        //first不为null会查找所有
+        map.put("first", "all");
+        //分页
+        PageHelper.startPage(pageNo, pageSize);
+        PageInfo pages = new PageInfo(byjChannelInfoLogMapper.selectBYJChannelLog(map));
+        return pages;
     }
 
     @Override

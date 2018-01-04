@@ -28,11 +28,15 @@
     <include refid="Base_Column_List" />
     FROM byjchannelinfolog
     WHERE chcode=#{chcode,jdbcType=VARCHAR}
+    AND inserttime &gt; #{startDate}
+    AND inserttime &lt; #{endDate}
     UNION ALL
     SELECT
     <include refid="Base_Column_List" />
     FROM ${historyTable}
     WHERE chcode=#{chcode,jdbcType=VARCHAR}
+    AND inserttime &gt; #{startDate}
+    AND inserttime &lt; #{endDate}
     ORDER BY inserttime DESC
     <if test="first == null or first == ''">
       LIMIT 0,1

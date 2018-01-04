@@ -1,0 +1,1117 @@
+09:43:45.678 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 5536 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+09:43:45.683 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+09:43:46.027 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f233525: startup date [Wed Jan 03 09:43:46 CST 2018]; root of context hierarchy
+09:43:46.116 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+09:43:46.835 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+09:43:46.836 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+09:43:47.388 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+09:43:47.393 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+09:43:47.408 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+09:45:40.634 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 8672 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+09:45:40.636 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+09:45:40.784 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d67aac: startup date [Wed Jan 03 09:45:40 CST 2018]; root of context hierarchy
+09:45:40.802 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+09:45:41.168 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+09:45:41.169 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+09:45:41.170 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+09:45:41.170 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+09:45:41.170 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+09:45:41.173 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+09:45:41.173 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+09:45:41.173 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+09:45:41.173 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+09:45:41.557 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+09:45:41.561 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+09:45:41.565 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+09:57:22.671 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 1648 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+09:57:22.673 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+09:57:22.817 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1255c8f1: startup date [Wed Jan 03 09:57:22 CST 2018]; root of context hierarchy
+09:57:22.849 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+09:57:23.296 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+09:57:23.296 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+09:57:23.297 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+09:57:23.298 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+09:57:23.298 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+09:57:23.298 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+09:57:23.301 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+09:57:23.301 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+09:57:23.301 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+09:57:23.301 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+09:57:23.688 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+09:57:23.693 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+09:57:23.697 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:34:40.646 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 13844 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:34:40.647 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:34:40.755 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64116236: startup date [Wed Jan 03 10:34:40 CST 2018]; root of context hierarchy
+10:34:40.785 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:34:41.285 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:34:41.285 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:34:41.286 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:34:41.290 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:34:41.290 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:34:41.290 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:34:41.290 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:34:41.736 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+10:34:41.741 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:34:41.746 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:45:28.246 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 11960 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:45:28.248 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:45:28.366 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f233525: startup date [Wed Jan 03 10:45:28 CST 2018]; root of context hierarchy
+10:45:28.401 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:45:28.734 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:45:28.735 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:45:28.735 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:45:28.735 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:45:28.735 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:45:28.736 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:45:28.739 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:45:28.739 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:45:28.739 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:45:28.739 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:45:29.159 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+10:45:29.164 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:45:29.168 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:46:28.973 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 14592 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:46:28.975 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:46:29.108 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4e82a5ec: startup date [Wed Jan 03 10:46:29 CST 2018]; root of context hierarchy
+10:46:29.131 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:46:29.502 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:46:29.503 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:46:29.504 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:46:29.504 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:46:29.504 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:46:29.505 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:46:29.966 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+10:46:29.971 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:46:29.976 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:48:52.461 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 7220 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:48:52.463 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:48:52.580 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@575595da: startup date [Wed Jan 03 10:48:52 CST 2018]; root of context hierarchy
+10:48:52.601 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:48:52.940 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:48:52.940 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:48:52.941 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:48:52.941 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:48:52.941 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:48:52.942 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:48:52.945 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:48:52.945 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:48:52.945 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:48:52.945 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:48:53.311 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+10:48:53.316 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:48:53.320 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:49:33.211 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 5596 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:49:33.213 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:49:33.339 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@36802f08: startup date [Wed Jan 03 10:49:33 CST 2018]; root of context hierarchy
+10:49:33.384 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:49:33.726 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:49:33.726 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:49:33.726 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:49:33.726 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:49:33.727 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:49:33.728 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:49:33.728 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:49:33.728 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:49:33.728 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:49:34.102 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+10:49:34.107 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:49:34.112 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error at ::0 formal unbound in pointcut 
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:301)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 42 common frames omitted
+10:51:20.883 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 15812 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:51:20.885 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:51:21.020 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3f233525: startup date [Wed Jan 03 10:51:21 CST 2018]; root of context hierarchy
+10:51:21.068 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:51:21.407 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:51:21.408 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:51:21.410 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:51:21.410 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:51:21.410 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:51:21.410 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:51:21.722 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Expecting to find 2 arguments to bind by name in advice, but actually found 1 arguments.
+10:51:21.727 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+10:51:21.731 [restartedMain] ERROR o.springframework.boot.SpringApplication - Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Expecting to find 2 arguments to bind by name in advice, but actually found 1 arguments.
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.dongxin.channel.ChannelApplication.main(ChannelApplication.java:12)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatEmbeddedServletContainerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/EmbeddedServletContainerAutoConfiguration$EmbeddedTomcat.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Expecting to find 2 arguments to bind by name in advice, but actually found 1 arguments.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.getEmbeddedServletContainerFactory(EmbeddedWebApplicationContext.java:199)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:162)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:134)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is java.lang.IllegalStateException: Expecting to find 2 arguments to bind by name in advice, but actually found 1 arguments.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalStateException: Expecting to find 2 arguments to bind by name in advice, but actually found 1 arguments.
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindExplicitArguments(AbstractAspectJAdvice.java:468)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.bindArgumentsByName(AbstractAspectJAdvice.java:435)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.calculateArgumentBindings(AbstractAspectJAdvice.java:386)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvice(ReflectiveAspectJAdvisorFactory.java:301)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.instantiateAdvice(InstantiationModelAwarePointcutAdvisorImpl.java:160)
+	at org.springframework.aop.aspectj.annotation.InstantiationModelAwarePointcutAdvisorImpl.<init>(InstantiationModelAwarePointcutAdvisorImpl.java:106)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisor(ReflectiveAspectJAdvisorFactory.java:209)
+	at org.springframework.aop.aspectj.annotation.ReflectiveAspectJAdvisorFactory.getAdvisors(ReflectiveAspectJAdvisorFactory.java:136)
+	at org.springframework.aop.aspectj.annotation.BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors(BeanFactoryAspectJAdvisorsBuilder.java:109)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:90)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 41 common frames omitted
+10:51:37.285 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 14876 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:51:37.286 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:51:37.409 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b205df0: startup date [Wed Jan 03 10:51:37 CST 2018]; root of context hierarchy
+10:51:37.443 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:51:37.781 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:51:37.781 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:51:37.781 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:51:37.781 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:51:37.782 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:51:37.784 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:51:37.784 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:51:37.784 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:51:37.784 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:51:38.556 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+10:51:38.562 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:51:38.563 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+10:51:38.623 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/channel] - Initializing Spring embedded WebApplicationContext
+10:51:38.623 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1214 ms
+10:51:38.842 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:51:38.843 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+10:51:38.845 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:51:38.846 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:51:38.846 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:51:38.846 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:51:38.846 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+10:51:39.124 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+10:51:39.173 [restartedMain] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+10:51:39.174 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.BYJChannelInfoLog matches criteria [is assignable to Object]
+10:51:39.174 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelHandleLog matches criteria [is assignable to Object]
+10:51:39.174 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelInfo matches criteria [is assignable to Object]
+10:51:39.174 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelUserLogin matches criteria [is assignable to Object]
+10:51:39.175 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.HttpResult matches criteria [is assignable to Object]
+10:51:39.175 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.RunLogChannelInfo matches criteria [is assignable to Object]
+10:51:39.175 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.dongxin.channel.domain' for aliases
+10:51:39.341 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\BYJChannelInfoLogMapper.xml]'
+10:51:39.371 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelHandleLogMapper.xml]'
+10:51:39.413 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelInfoMapper.xml]'
+10:51:39.426 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelUserLoginMapper.xml]'
+10:51:39.437 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\RunLogChannelInfoMapper.xml]'
+10:51:39.778 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b205df0: startup date [Wed Jan 03 10:51:37 CST 2018]; root of context hierarchy
+10:51:39.842 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getLastRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getLastRunLog(java.lang.String)
+10:51:39.843 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getRunLog(java.lang.String)
+10:51:39.844 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/exit],methods=[DELETE]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.exit(javax.servlet.http.HttpServletRequest,java.lang.String)
+10:51:39.845 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePWD],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.changePWD(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.String) throws java.lang.Exception
+10:51:39.845 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String) throws java.lang.Exception
+10:51:39.845 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/getVerify],methods=[POST]}" onto public void com.dongxin.channel.controller.VaildCodeController.getVerfy(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception
+10:51:39.845 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/verVerify],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.VaildCodeController.vailVerify(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String) throws java.lang.Exception
+10:51:39.847 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:51:39.847 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:51:39.875 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:51:39.875 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:51:39.896 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+10:51:39.912 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:51:39.936 [restartedMain] WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+10:51:40.425 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:51:40.475 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:51:40.476 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:51:40.479 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+10:51:40.498 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+10:51:40.503 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+10:51:40.511 [restartedMain] INFO  o.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:51:40.530 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+10:51:40.533 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Started ChannelApplication in 3.496 seconds (JVM running for 4.027)
+10:54:51.024 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 7360 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+10:54:51.025 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+10:54:51.161 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d67aac: startup date [Wed Jan 03 10:54:51 CST 2018]; root of context hierarchy
+10:54:51.199 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+10:54:51.537 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+10:54:51.537 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+10:54:51.537 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+10:54:51.537 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+10:54:51.537 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+10:54:51.538 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+10:54:51.542 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+10:54:51.542 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+10:54:51.542 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+10:54:51.542 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+10:54:52.175 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+10:54:52.181 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:54:52.182 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+10:54:52.246 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/channel] - Initializing Spring embedded WebApplicationContext
+10:54:52.247 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1086 ms
+10:54:52.415 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+10:54:52.416 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+10:54:52.417 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+10:54:52.418 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+10:54:52.418 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+10:54:52.418 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+10:54:52.418 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+10:54:52.663 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+10:54:52.682 [restartedMain] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+10:54:52.683 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.BYJChannelInfoLog matches criteria [is assignable to Object]
+10:54:52.683 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelHandleLog matches criteria [is assignable to Object]
+10:54:52.684 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelInfo matches criteria [is assignable to Object]
+10:54:52.684 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelUserLogin matches criteria [is assignable to Object]
+10:54:52.684 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.HttpResult matches criteria [is assignable to Object]
+10:54:52.685 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.RunLogChannelInfo matches criteria [is assignable to Object]
+10:54:52.685 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.dongxin.channel.domain' for aliases
+10:54:52.791 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\BYJChannelInfoLogMapper.xml]'
+10:54:52.798 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelHandleLogMapper.xml]'
+10:54:52.807 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelInfoMapper.xml]'
+10:54:52.812 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelUserLoginMapper.xml]'
+10:54:52.818 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\RunLogChannelInfoMapper.xml]'
+10:54:53.089 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d67aac: startup date [Wed Jan 03 10:54:51 CST 2018]; root of context hierarchy
+10:54:53.131 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getLastRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getLastRunLog(java.lang.String)
+10:54:53.132 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getRunLog(java.lang.String)
+10:54:53.133 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/exit],methods=[DELETE]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.exit(javax.servlet.http.HttpServletRequest,java.lang.String)
+10:54:53.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.login(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String) throws java.lang.Exception
+10:54:53.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePWD],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.changePWD(javax.servlet.http.HttpServletRequest,java.lang.Integer,java.lang.String) throws java.lang.Exception
+10:54:53.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/getVerify],methods=[POST]}" onto public void com.dongxin.channel.controller.VaildCodeController.getVerfy(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception
+10:54:53.134 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/verVerify],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.VaildCodeController.vailVerify(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String) throws java.lang.Exception
+10:54:53.136 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+10:54:53.136 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+10:54:53.162 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:54:53.162 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:54:53.173 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+10:54:53.187 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+10:54:53.210 [restartedMain] WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+10:54:53.557 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+10:54:53.592 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+10:54:53.593 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+10:54:53.595 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+10:54:53.603 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+10:54:53.608 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+10:54:53.616 [restartedMain] INFO  o.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+10:54:53.627 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+10:54:53.631 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Started ChannelApplication in 2.871 seconds (JVM running for 3.424)
+10:55:34.523 [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@76d67aac: startup date [Wed Jan 03 10:54:51 CST 2018]; root of context hierarchy
+10:55:34.525 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+10:55:34.525 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
+16:50:11.445 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Starting ChannelApplication on DESKTOP-P4US2OO with PID 15200 (E:\IDEA\project\channel\target\classes started by DELL in E:\IDEA\project\channel)
+16:50:11.447 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - The following profiles are active: dev
+16:50:11.584 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a5a5bea: startup date [Wed Jan 03 16:50:11 CST 2018]; root of context hierarchy
+16:50:11.625 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.5.Final
+16:50:11.995 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\BYJChannelInfoLogMapper.class]
+16:50:11.995 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelHandleLogMapper.class]
+16:50:11.995 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelInfoMapper.class]
+16:50:11.995 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\ChannelUserLoginMapper.class]
+16:50:11.995 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Identified candidate component class: file [E:\IDEA\project\channel\target\classes\com\dongxin\channel\mapper\RunLogChannelInfoMapper.class]
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'BYJChannelInfoLogMapper' and 'com.dongxin.channel.mapper.BYJChannelInfoLogMapper' mapperInterface
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'BYJChannelInfoLogMapper'.
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelHandleLogMapper' and 'com.dongxin.channel.mapper.ChannelHandleLogMapper' mapperInterface
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelHandleLogMapper'.
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelInfoMapper' and 'com.dongxin.channel.mapper.ChannelInfoMapper' mapperInterface
+16:50:11.996 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelInfoMapper'.
+16:50:11.998 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'channelUserLoginMapper' and 'com.dongxin.channel.mapper.ChannelUserLoginMapper' mapperInterface
+16:50:11.998 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'channelUserLoginMapper'.
+16:50:11.998 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'runLogChannelInfoMapper' and 'com.dongxin.channel.mapper.RunLogChannelInfoMapper' mapperInterface
+16:50:11.998 [restartedMain] DEBUG o.m.spring.mapper.ClassPathMapperScanner - Enabling autowire by type for MapperFactoryBean with name 'runLogChannelInfoMapper'.
+16:50:12.650 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8088 (http)
+16:50:12.655 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:50:12.656 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.16
+16:50:12.710 [localhost-startStop-1] INFO  o.a.c.c.C.[.[localhost].[/channel] - Initializing Spring embedded WebApplicationContext
+16:50:12.710 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1126 ms
+16:50:12.894 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+16:50:12.896 [localhost-startStop-1] INFO  o.s.b.w.servlet.ServletRegistrationBean - Mapping servlet: 'statViewServlet' to [/druid/*]
+16:50:12.898 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+16:50:12.898 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+16:50:12.899 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+16:50:12.899 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+16:50:12.899 [localhost-startStop-1] INFO  o.s.b.web.servlet.FilterRegistrationBean - Mapping filter: 'webStatFilter' to urls: [/*]
+16:50:13.156 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:50:13.175 [restartedMain] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.mybatis.spring.boot.autoconfigure.SpringBootVFS
+16:50:13.177 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.BYJChannelInfoLog matches criteria [is assignable to Object]
+16:50:13.177 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelHandleLog matches criteria [is assignable to Object]
+16:50:13.177 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelInfo matches criteria [is assignable to Object]
+16:50:13.177 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.ChannelUserLogin matches criteria [is assignable to Object]
+16:50:13.178 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.HttpResult matches criteria [is assignable to Object]
+16:50:13.178 [restartedMain] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.dongxin.channel.domain.RunLogChannelInfo matches criteria [is assignable to Object]
+16:50:13.178 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Scanned package: 'com.dongxin.channel.domain' for aliases
+16:50:13.283 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\BYJChannelInfoLogMapper.xml]'
+16:50:13.290 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelHandleLogMapper.xml]'
+16:50:13.299 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelInfoMapper.xml]'
+16:50:13.305 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\ChannelUserLoginMapper.xml]'
+16:50:13.311 [restartedMain] DEBUG org.mybatis.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\IDEA\project\channel\target\classes\mapper\RunLogChannelInfoMapper.xml]'
+16:50:13.629 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a5a5bea: startup date [Wed Jan 03 16:50:11 CST 2018]; root of context hierarchy
+16:50:13.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getLastRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getLastRunLog(java.lang.Integer)
+16:50:13.669 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/info/getRunLog],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.RunLogChannelInfoController.getRunLog(java.lang.Integer)
+16:50:13.672 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/exit],methods=[DELETE]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.exit(java.lang.Integer)
+16:50:13.672 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/login],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.login(java.lang.String,java.lang.String) throws java.lang.Exception
+16:50:13.672 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/user/changePWD],methods=[POST]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.UserController.changePWD(java.lang.Integer,java.lang.String) throws java.lang.Exception
+16:50:13.672 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/getVerify],methods=[POST]}" onto public void com.dongxin.channel.controller.VaildCodeController.getVerfy(javax.servlet.http.HttpServletResponse,java.lang.String) throws java.lang.Exception
+16:50:13.673 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/vail/verVerify],methods=[GET]}" onto public com.dongxin.channel.domain.HttpResult com.dongxin.channel.controller.VaildCodeController.vailVerify(javax.servlet.http.HttpServletRequest,java.lang.String,java.lang.String) throws java.lang.Exception
+16:50:13.674 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+16:50:13.674 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+16:50:13.706 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:50:13.706 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:50:13.719 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in exceptionHandle
+16:50:13.734 [restartedMain] INFO  o.s.w.s.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+16:50:13.762 [restartedMain] WARN  o.s.b.a.t.AbstractTemplateResolverConfiguration - Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+16:50:14.167 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:50:14.200 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+16:50:14.201 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+16:50:14.204 [restartedMain] INFO  o.s.j.e.a.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+16:50:14.212 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8088"]
+16:50:14.218 [restartedMain] INFO  o.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8088"]
+16:50:14.225 [restartedMain] INFO  o.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+16:50:14.236 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
+16:50:14.239 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Started ChannelApplication in 3.042 seconds (JVM running for 3.562)
+16:50:25.289 [http-nio-8088-exec-2] INFO  o.a.c.c.C.[.[localhost].[/channel] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+16:50:25.289 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+16:50:25.311 [http-nio-8088-exec-2] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+16:50:25.326 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - --------进入beforeLog方法：@Before
+16:50:25.329 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - url=http://localhost:8088/channel/vail/getVerify&date=5431587894
+16:50:25.329 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - method=POST
+16:50:25.329 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+16:50:25.330 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - class_method=com.dongxin.channel.controller.VaildCodeController.getVerfy
+16:50:25.330 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - arg=com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper@49f0eacc, 	5431587894, 	
+16:50:25.330 [http-nio-8088-exec-2] INFO  com.dongxin.channel.aspect.HttpAspect - --------进入afterLog方法：@After
+16:50:25.332 [http-nio-8088-exec-2] ERROR c.dongxin.channel.handle.ExceptionHandle - 【系统异常】
+java.lang.ClassCastException: com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper cannot be cast to java.lang.Integer
+	at com.dongxin.channel.aspect.HttpAspect.beforeLog(HttpAspect.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:629)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:611)
+	at org.springframework.aop.aspectj.AspectJMethodBeforeAdvice.before(AspectJMethodBeforeAdvice.java:43)
+	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:51)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.aspectj.AspectJAfterAdvice.invoke(AspectJAfterAdvice.java:47)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673)
+	at com.dongxin.channel.controller.VaildCodeController$$EnhancerBySpringCGLIB$$b8efb4c9.getVerfy(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:105)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1455)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+16:50:25.369 [http-nio-8088-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by Handler execution: java.lang.ClassCastException: com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper cannot be cast to java.lang.Integer
+16:51:36.897 [Thread-12] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a5a5bea: startup date [Wed Jan 03 16:50:11 CST 2018]; root of context hierarchy
+16:51:36.899 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+16:51:36.899 [Thread-12] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans
