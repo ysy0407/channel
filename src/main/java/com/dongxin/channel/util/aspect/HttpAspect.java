@@ -1,8 +1,8 @@
-package com.dongxin.channel.aspect;
+package com.dongxin.channel.util.aspect;
 
 import com.dongxin.channel.domain.ChannelUserLogin;
-import com.dongxin.channel.exception.MyException;
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.exception.MyException;
+import com.dongxin.channel.util.myenum.MyEnum;
 import com.dongxin.channel.util.HttpUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;

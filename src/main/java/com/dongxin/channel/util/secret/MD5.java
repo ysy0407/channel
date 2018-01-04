@@ -1,4 +1,4 @@
-package com.dongxin.channel.util;
+package com.dongxin.channel.util.secret;
 
 /**
  * md5加密解密

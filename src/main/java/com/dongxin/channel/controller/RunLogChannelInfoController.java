@@ -1,7 +1,7 @@
 package com.dongxin.channel.controller;
 
 import com.dongxin.channel.domain.ChannelUserLogin;
-import com.dongxin.channel.domain.HttpResult;
+import com.dongxin.channel.util.domain.HttpResult;
 import com.dongxin.channel.service.RunLogChannelInfoService;
 import com.dongxin.channel.util.HttpUtil;
 import com.dongxin.channel.util.ResultUtil;
@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.servlet.http.HttpServletRequest;
 
 /**
  * 渠道备用金信息Controller

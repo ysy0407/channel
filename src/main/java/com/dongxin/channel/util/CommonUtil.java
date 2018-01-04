@@ -2,6 +2,8 @@ package com.dongxin.channel.util;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Field;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -13,6 +15,15 @@ import java.util.Map;
  **/
 
 public class CommonUtil<T> {
+
+    /**
+     * 获取当前日期
+     * @return
+     */
+    public static String getNowDate(){
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日hh时mm分ss秒");
+        return sdf.format(new Date());
+    }
 
     /**
      * 将泛型的class转为map

@@ -1,4 +1,4 @@
-package com.dongxin.channel.util;
+package com.dongxin.channel.util.secret;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

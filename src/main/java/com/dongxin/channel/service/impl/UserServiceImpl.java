@@ -1,12 +1,11 @@
 package com.dongxin.channel.service.impl;
 
 import com.dongxin.channel.domain.ChannelUserLogin;
-import com.dongxin.channel.exception.MyException;
+import com.dongxin.channel.util.exception.MyException;
 import com.dongxin.channel.mapper.ChannelUserLoginMapper;
-import com.dongxin.channel.myannotation.NeedLog;
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.annotation.NeedLog;
+import com.dongxin.channel.util.myenum.MyEnum;
 import com.dongxin.channel.service.UserService;
-import com.dongxin.channel.util.Base64;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

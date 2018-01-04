@@ -1,6 +1,6 @@
-package com.dongxin.channel.exception;
+package com.dongxin.channel.util.exception;
 
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.myenum.MyEnum;
 
 /**
  * 自定义异常

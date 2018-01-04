@@ -1,4 +1,4 @@
-package com.dongxin.channel.myannotation;
+package com.dongxin.channel.util.annotation;
 
 import java.lang.annotation.*;
 

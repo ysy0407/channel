@@ -1,10 +1,9 @@
-package com.dongxin.channel.aspect;
+package com.dongxin.channel.util.aspect;
 
 import com.dongxin.channel.domain.ChannelHandleLog;
 import com.dongxin.channel.domain.ChannelUserLogin;
-import com.dongxin.channel.myannotation.NeedLog;
+import com.dongxin.channel.util.annotation.NeedLog;
 import com.dongxin.channel.service.ChannelHandleLogService;
-import com.dongxin.channel.util.CommonUtil;
 import com.dongxin.channel.util.HttpUtil;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -16,7 +15,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 
 /**

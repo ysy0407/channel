@@ -1,4 +1,4 @@
-package com.dongxin.channel.myenum;
+package com.dongxin.channel.util.myenum;
 
 public enum MyEnum {
 

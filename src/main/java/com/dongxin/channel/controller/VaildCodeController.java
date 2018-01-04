@@ -1,12 +1,12 @@
 package com.dongxin.channel.controller;
 
-import com.dongxin.channel.domain.HttpResult;
-import com.dongxin.channel.exception.MyException;
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.domain.HttpResult;
+import com.dongxin.channel.util.exception.MyException;
+import com.dongxin.channel.util.myenum.MyEnum;
 import com.dongxin.channel.util.HttpUtil;
-import com.dongxin.channel.util.MD5;
+import com.dongxin.channel.util.secret.MD5;
 import com.dongxin.channel.util.ResultUtil;
-import com.dongxin.channel.util.ValidationCode;
+import com.dongxin.channel.util.secret.ValidationCode;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -53,7 +53,7 @@ public class VaildCodeController {
      * @return
      * @throws Exception
      */
-    @GetMapping("/verVerify")
+    @GetMapping("/vailVerify")
     public HttpResult vailVerify(HttpServletRequest request,
                                  @RequestParam("date") String date, @RequestParam("verify") String verify) throws Exception{
         //以时间戳为key获取验证码

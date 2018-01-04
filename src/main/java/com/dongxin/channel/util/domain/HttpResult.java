@@ -1,4 +1,4 @@
-package com.dongxin.channel.domain;
+package com.dongxin.channel.util.domain;
 
 /**
  * 统一的HTTP请求响应信息

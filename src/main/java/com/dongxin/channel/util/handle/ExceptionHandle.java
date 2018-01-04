@@ -1,7 +1,7 @@
-package com.dongxin.channel.handle;
+package com.dongxin.channel.util.handle;
 
-import com.dongxin.channel.domain.HttpResult;
-import com.dongxin.channel.exception.MyException;
+import com.dongxin.channel.util.domain.HttpResult;
+import com.dongxin.channel.util.exception.MyException;
 import com.dongxin.channel.util.ResultUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

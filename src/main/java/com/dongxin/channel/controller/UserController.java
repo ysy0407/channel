@@ -1,21 +1,15 @@
 package com.dongxin.channel.controller;
 
 import com.dongxin.channel.domain.ChannelUserLogin;
-import com.dongxin.channel.domain.HttpResult;
-import com.dongxin.channel.exception.MyException;
-import com.dongxin.channel.myannotation.NeedLog;
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.domain.HttpResult;
 import com.dongxin.channel.service.UserService;
-import com.dongxin.channel.util.Base64;
+import com.dongxin.channel.util.secret.Base64;
 import com.dongxin.channel.util.HttpUtil;
 import com.dongxin.channel.util.ResultUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * 渠道用户Controller

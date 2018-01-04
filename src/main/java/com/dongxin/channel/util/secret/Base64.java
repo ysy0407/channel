@@ -1,4 +1,4 @@
-package com.dongxin.channel.util;
+package com.dongxin.channel.util.secret;
 
 public class Base64 {
     private static final byte[] encodingTable = {

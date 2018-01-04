@@ -1,7 +1,7 @@
 package com.dongxin.channel.util;
 
-import com.dongxin.channel.domain.HttpResult;
-import com.dongxin.channel.myenum.MyEnum;
+import com.dongxin.channel.util.domain.HttpResult;
+import com.dongxin.channel.util.myenum.MyEnum;
 import org.springframework.stereotype.Component;
 
 /**

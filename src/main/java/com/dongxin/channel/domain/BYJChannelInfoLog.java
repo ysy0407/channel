@@ -1,5 +1,7 @@
 package com.dongxin.channel.domain;
 
+import com.dongxin.channel.util.annotation.ExcelResources;
+
 public class BYJChannelInfoLog {
     private Integer id;
 
@@ -68,6 +70,7 @@ public class BYJChannelInfoLog {
         this.chcode = chcode == null ? null : chcode.trim();
     }
 
+    @ExcelResources(title = "扣款/返款",order = 9)
     public Byte getKkflag() {
         return kkflag;
     }
@@ -84,6 +87,7 @@ public class BYJChannelInfoLog {
         this.orderid = orderid == null ? null : orderid.trim();
     }
 
+    @ExcelResources(title = "订单号",order = 1)
     public String getSrcorderid() {
         return srcorderid;
     }
@@ -92,6 +96,7 @@ public class BYJChannelInfoLog {
         this.srcorderid = srcorderid == null ? null : srcorderid.trim();
     }
 
+    @ExcelResources(title = "运行商",order = 4)
     public Byte getOperators() {
         return operators;
     }
@@ -100,6 +105,7 @@ public class BYJChannelInfoLog {
         this.operators = operators;
     }
 
+    @ExcelResources(title = "产品类型",order = 6)
     public Byte getFtid() {
         return ftid;
     }
@@ -108,6 +114,7 @@ public class BYJChannelInfoLog {
         this.ftid = ftid;
     }
 
+    @ExcelResources(title = "手机号", order = 2)
     public String getPhone() {
         return phone;
     }
@@ -116,6 +123,7 @@ public class BYJChannelInfoLog {
         this.phone = phone == null ? null : phone.trim();
     }
 
+    @ExcelResources(title = "省份", order = 3)
     public String getProvname() {
         return provname;
     }
@@ -124,6 +132,7 @@ public class BYJChannelInfoLog {
         this.provname = provname == null ? null : provname.trim();
     }
 
+    @ExcelResources(title = "产品ID",order = 5)
     public String getProductid() {
         return productid;
     }
@@ -148,6 +157,7 @@ public class BYJChannelInfoLog {
         this.bdtime = bdtime == null ? null : bdtime.trim();
     }
 
+    @ExcelResources(title = "交易金额",order = 8)
     public Double getTotalmoney() {
         return totalmoney;
     }
@@ -164,6 +174,7 @@ public class BYJChannelInfoLog {
         this.isdel = isdel;
     }
 
+    @ExcelResources(title = "交易时间",order = 7)
     public String getInserttime() {
         return inserttime;
     }
