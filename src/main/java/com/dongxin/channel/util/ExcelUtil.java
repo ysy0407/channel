@@ -105,16 +105,7 @@ public class ExcelUtil {
             e.printStackTrace();
         }
     }
-//    public ExcelTemplate exportObj2ExcelByTemplate(Map<String,String> datas, String template, List objs, Class clz, boolean isClasspath) {
-//        try {
-//            ExcelTemplate et = handlerObj2Excel(template, objs, clz, isClasspath);
-//            et.replaceFinalData(datas);
-//            return  et;
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            return null;
-//        }
-//    }
+
 
     /**
      * 对象转Byte数组

@@ -69,3 +69,73 @@
 10:33:14.036 [restartedMain] INFO  o.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
 10:33:14.047 [restartedMain] INFO  o.s.b.c.e.t.TomcatEmbeddedServletContainer - Tomcat started on port(s): 8088 (http)
 10:33:14.052 [restartedMain] INFO  com.dongxin.channel.ChannelApplication - Started ChannelApplication in 4.983 seconds (JVM running for 6.377)
+13:00:21.295 [http-nio-8088-exec-1] INFO  o.a.c.c.C.[.[localhost].[/channel] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+13:00:21.295 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+13:00:21.315 [http-nio-8088-exec-1] INFO  o.s.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+13:00:21.344 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入beforeLog方法：@Before
+13:00:21.355 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - url=http://localhost:8088/channel/byjlog/getBYJInfoLog&id=1&pageNo=0&startDate=2018-1-3%2012:57:27&endDate=2018-1-3%2017:57:27
+13:00:21.355 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - method=GET
+13:00:21.355 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+13:00:21.363 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - class_method=com.dongxin.channel.controller.BYJChannelInfoLogController.getBYJInfoLog
+13:00:21.363 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - arg=1, 	2018-1-3 12:57:27, 	2018-1-3 17:57:27, 	0, 	20, 	
+13:00:21.364 [http-nio-8088-exec-1] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入afterLog方法：@After
+13:00:21.405 [http-nio-8088-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by Handler execution: com.dongxin.channel.util.exception.MyException
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入beforeLog方法：@Before
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - url=http://localhost:8088/channel/byjlog/getBYJInfoLog&id=1&startDate=2018-01-01%2012:57:27&endDate=2018-01-03%2017:57:27&pageNo=0
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - method=GET
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - class_method=com.dongxin.channel.controller.BYJChannelInfoLogController.getBYJInfoLog
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - arg=1, 	2018-01-01 12:57:27, 	2018-01-03 17:57:27, 	0, 	20, 	
+13:00:46.104 [http-nio-8088-exec-3] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入afterLog方法：@After
+13:00:46.105 [http-nio-8088-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by Handler execution: com.dongxin.channel.util.exception.MyException
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入beforeLog方法：@Before
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - url=http://localhost:8088/channel/byjlog/getBYJInfoLog&id=1&startDate=2018-01-01%2012:57:27&endDate=2018-01-03%2017:57:27&pageNo=0
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - method=GET
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - class_method=com.dongxin.channel.controller.BYJChannelInfoLogController.getBYJInfoLog
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - arg=1, 	2018-01-01 12:57:27, 	2018-01-03 17:57:27, 	0, 	20, 	
+13:01:08.045 [http-nio-8088-exec-5] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入afterLog方法：@After
+13:01:08.046 [http-nio-8088-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved exception caused by Handler execution: com.dongxin.channel.util.exception.MyException
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入beforeLog方法：@Before
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - url=http://localhost:8088/channel/user/login&username=dGVzdGNlc2hp&password=ZTEwYWRjMzk0OWJhNTlhYmJlNTZlMDU3ZjIwZjg4M2U=
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - method=GET
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - class_method=com.dongxin.channel.controller.UserController.login
+13:02:09.863 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - arg=dGVzdGNlc2hp, 	ZTEwYWRjMzk0OWJhNTlhYmJlNTZlMDU3ZjIwZjg4M2U=, 	
+13:02:09.872 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.LogAspect - ---------这是NeedLog-----Before
+13:02:09.890 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+13:02:09.894 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55a4a995] was not registered for synchronization because synchronization is not active
+13:02:09.936 [http-nio-8088-exec-8] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+13:02:10.386 [http-nio-8088-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@22a92720] will not be managed by Spring
+13:02:10.389 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.selectByNameAndPWD - ==>  Preparing: SELECT t1.id, t1.username, t1.password, t1.status, t1.meno FROM channel_user_login AS t1, channelinfo AS t2 WHERE t1.username = t2.chcode AND t1.username = ? AND t1.password = ? 
+13:02:10.404 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.selectByNameAndPWD - ==> Parameters: testceshi(String), e10adc3949ba59abbe56e057f20f883e(String)
+13:02:10.467 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.selectByNameAndPWD - <==      Total: 1
+13:02:10.468 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55a4a995]
+13:02:10.471 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+13:02:10.471 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e49f77d] was not registered for synchronization because synchronization is not active
+13:02:10.497 [http-nio-8088-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@22a92720] will not be managed by Spring
+13:02:10.498 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.insertSelective - ==>  Preparing: insert into channel_handle_log ( username, channelName, logIP, handle, inserttime ) values ( ?, ?, ?, ?, NOW() ) 
+13:02:10.498 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.insertSelective - ==> Parameters: testceshi(String), 测试(String), 0:0:0:0:0:0:0:1(String), 登录(String)
+13:02:10.550 [http-nio-8088-exec-8] DEBUG c.d.c.m.C.insertSelective - <==    Updates: 1
+13:02:10.550 [http-nio-8088-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@e49f77d]
+13:02:10.551 [http-nio-8088-exec-8] INFO  c.d.channel.controller.UserController - ChannelUserLogin{id=1, username='testceshi', password='e10adc3949ba59abbe56e057f20f883e', status='0', meno='测试'}
+13:02:10.551 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入afterLog方法：@After
+13:02:10.551 [http-nio-8088-exec-8] INFO  c.dongxin.channel.util.aspect.HttpAspect - response=Result{code='0000', msg='操作成功', date=ChannelUserLogin{id=1, username='testceshi', password='e10adc3949ba59abbe56e057f20f883e', status='0', meno='测试'}}
+13:02:12.878 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入beforeLog方法：@Before
+13:02:12.878 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - url=http://localhost:8088/channel/byjlog/downBYJInfoLog&id=1&startDate=2018-01-01%2012:57:27&endDate=2018-01-03%2017:57:27
+13:02:12.878 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - method=GET
+13:02:12.878 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - ip=0:0:0:0:0:0:0:1
+13:02:12.878 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - class_method=com.dongxin.channel.controller.BYJChannelInfoLogController.downBYJInfoLog
+13:02:12.879 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - arg=1, 	2018-01-01 12:57:27, 	2018-01-03 17:57:27, 	
+13:02:12.882 [http-nio-8088-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+13:02:12.882 [http-nio-8088-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187cf995] was not registered for synchronization because synchronization is not active
+13:02:12.911 [http-nio-8088-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl@22a92720] will not be managed by Spring
+13:02:12.911 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog_COUNT - ==>  Preparing: SELECT count(0) FROM (SELECT id, chcode, kkflag, orderid, srcorderid, operators, ftid, phone, provname, productid, runmoney, bdtime, totalmoney, isdel, inserttime FROM byjchannelinfolog WHERE chcode = ? AND inserttime > ? AND inserttime < ? UNION ALL SELECT id, chcode, kkflag, orderid, srcorderid, operators, ftid, phone, provname, productid, runmoney, bdtime, totalmoney, isdel, inserttime FROM byjchannelinfolog1801 WHERE chcode = ? AND inserttime > ? AND inserttime < ?) table_count 
+13:02:12.912 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog_COUNT - ==> Parameters: testceshi(String), 2018-01-01 12:57:27(String), 2018-01-03 17:57:27(String), testceshi(String), 2018-01-01 12:57:27(String), 2018-01-03 17:57:27(String)
+13:02:12.939 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog_COUNT - <==      Total: 1
+13:02:12.939 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog - ==>  Preparing: SELECT id, chcode, kkflag, orderid, srcorderid, operators, ftid, phone, provname, productid, runmoney, bdtime, totalmoney, isdel, inserttime FROM byjchannelinfolog WHERE chcode=? AND inserttime > ? AND inserttime < ? UNION ALL SELECT id, chcode, kkflag, orderid, srcorderid, operators, ftid, phone, provname, productid, runmoney, bdtime, totalmoney, isdel, inserttime FROM byjchannelinfolog1801 WHERE chcode=? AND inserttime > ? AND inserttime < ? ORDER BY inserttime DESC LIMIT 999 
+13:02:12.940 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog - ==> Parameters: testceshi(String), 2018-01-01 12:57:27(String), 2018-01-03 17:57:27(String), testceshi(String), 2018-01-01 12:57:27(String), 2018-01-03 17:57:27(String)
+13:02:12.979 [http-nio-8088-exec-9] DEBUG c.d.c.m.B.selectBYJChannelLog - <==      Total: 37
+13:02:12.979 [http-nio-8088-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@187cf995]
+13:02:13.180 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - --------进入afterLog方法：@After
+13:02:13.180 [http-nio-8088-exec-9] INFO  c.dongxin.channel.util.aspect.HttpAspect - response=Result{code='0000', msg='操作成功', date=null}
