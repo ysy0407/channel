@@ -1,12 +1,12 @@
 package com.dongxin.channel;
 
-import com.github.pagehelper.PageHelper;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.embedded.EmbeddedServletContainerCustomizer;
+import org.springframework.boot.web.servlet.ErrorPage;
 import org.springframework.context.annotation.Bean;
-
-import java.util.Properties;
+import org.springframework.http.HttpStatus;
 
 @SpringBootApplication
 @MapperScan("com.dongxin.channel.mapper")
@@ -16,16 +16,14 @@ public class ChannelApplication {
 		SpringApplication.run(ChannelApplication.class, args);
 	}
 
-	//配置mybatis的分页插件pageHelper
-//     @Bean
-//     public PageHelper pageHelper(){
-//         PageHelper pageHelper = new PageHelper();
-//         Properties properties = new Properties();
-//         properties.setProperty("offsetAsPageNum","true");
-//         properties.setProperty("rowBoundsWithCount","true");
-//         properties.setProperty("reasonable","true");
-//         properties.setProperty("dialect","mysql");    //配置mysql数据库的方言
-//         pageHelper.setProperties(properties);
-//         return pageHelper;
-//     }
+	@Bean
+	public EmbeddedServletContainerCustomizer containerCustomizer() {
+
+		return (container -> {
+			//这样的语句需要 Modules-sources-language level 大于1.7
+			//当页面的状态码为LOCKED:423时,会跳转为指定页面
+			ErrorPage error404Page = new ErrorPage(HttpStatus.LOCKED, "/lock.html");
+			container.addErrorPages(error404Page);
+		});
+	}
 }

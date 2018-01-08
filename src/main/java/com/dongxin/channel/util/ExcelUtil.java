@@ -10,10 +10,10 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.*;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.*;
@@ -28,6 +28,7 @@ import java.util.*;
 
 public class ExcelUtil {
 
+    private static final Logger logger = LoggerFactory.getLogger(ExcelUtil.class);
     private static ExcelUtil eu = new ExcelUtil();
     private ExcelUtil(){}
 
@@ -89,7 +90,6 @@ public class ExcelUtil {
      * 将对象转换为Excel并且导出，该方法是基于模板的导出，导出到流
      * @param datas 模板中的替换的常量数据
      * @param template 模板路径
-     * @param os 输出流
      * @param objs 对象列表
      * @param clz 对象的类型
      * @param isClasspath 模板是否在classPath路径下
@@ -105,6 +105,56 @@ public class ExcelUtil {
             e.printStackTrace();
         }
     }
+//    public ExcelTemplate exportObj2ExcelByTemplate(Map<String,String> datas, String template, List objs, Class clz, boolean isClasspath) {
+//        try {
+//            ExcelTemplate et = handlerObj2Excel(template, objs, clz, isClasspath);
+//            et.replaceFinalData(datas);
+//            return  et;
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//    }
+
+    /**
+     * 对象转Byte数组
+     * @param obj
+     * @return
+     */
+    public static byte[] objectToByteArray(Object obj) {
+        byte[] bytes = null;
+        ByteArrayOutputStream byteArrayOutputStream = null;
+        ObjectOutputStream objectOutputStream = null;
+        try {
+            System.out.println("--------------obj:"+obj);
+            byteArrayOutputStream = new ByteArrayOutputStream();
+            objectOutputStream = new ObjectOutputStream(byteArrayOutputStream);
+            objectOutputStream.writeObject(obj);
+            objectOutputStream.flush();
+            bytes = byteArrayOutputStream.toByteArray();
+            System.out.println("---------bytes:"+bytes);
+        } catch (IOException e) {
+            logger.error("对象转为byte[]失败, " + e);
+        } finally {
+            if (objectOutputStream != null) {
+                try {
+                    objectOutputStream.close();
+                } catch (IOException e) {
+                    logger.error("关闭对象输出流失败, " + e);
+                }
+            }
+            if (byteArrayOutputStream != null) {
+                try {
+                    byteArrayOutputStream.close();
+                } catch (IOException e) {
+                    logger.error("关闭byte[]输出流失败, " + e);
+                }
+            }
+
+        }
+        return bytes;
+    }
+
     /**
      * 将对象转换为Excel并且导出，该方法是基于模板的导出，导出到一个具体的路径中
      * @param datas 模板中的替换的常量数据

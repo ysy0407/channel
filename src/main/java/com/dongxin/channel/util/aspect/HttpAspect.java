@@ -13,6 +13,7 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
 
 /**
  * HttpAop处理
@@ -44,6 +45,7 @@ public class HttpAspect {
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
         HttpUtil.setHttpSession(request.getSession());
+        HttpUtil.setHttpResponse(attributes.getResponse());
         //请求的链接
         loger.info("url={}", request.getRequestURL()+"&"+request.getQueryString());
         //请求的方式 POST GET
@@ -64,6 +66,12 @@ public class HttpAspect {
             //所有拦截的方法第一个参数为id
             int argID = (int)joinPoint.getArgs()[0];
             if(user == null || argID != user.getId()){
+                try {
+                    //当未登录时,设置状态码为423,资源被锁定HttpStatus.LOCKED
+                    HttpUtil.getHttpResponse().sendError(423);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
                 throw new MyException(MyEnum.ERR_1004);
             }
         }

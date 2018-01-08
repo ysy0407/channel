@@ -34,7 +34,7 @@ public class UserController {
      * @return
      * @throws Exception
      */
-    @PostMapping("/login")
+    @GetMapping("/login")
     public HttpResult login(@RequestParam("username") String username,
                             @RequestParam("password") String password) throws Exception{
         //登陆 BASE64解密

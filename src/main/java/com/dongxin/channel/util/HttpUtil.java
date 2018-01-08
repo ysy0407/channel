@@ -1,6 +1,7 @@
 package com.dongxin.channel.util;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 public class HttpUtil {
 
     private static HttpSession httpSession = null;
+    private static HttpServletResponse httpResponse = null;
 
     /**
      * 获取请求客户端的ip地址
@@ -61,6 +63,14 @@ public class HttpUtil {
      */
     public static void removeSessionAttribute(String attributeName){
         httpSession.removeAttribute(attributeName);
+    }
+
+    public static HttpServletResponse getHttpResponse() {
+        return httpResponse;
+    }
+
+    public static void setHttpResponse(HttpServletResponse httpResponse) {
+        HttpUtil.httpResponse = httpResponse;
     }
 
     public static HttpSession getHttpSession() {

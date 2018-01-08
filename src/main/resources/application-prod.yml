@@ -1,6 +1,8 @@
 server:
   port: 7099  #端口
   context-path: /channel #项目访问路径
+  session:
+      timeout: 60 #session超时时间 00分钟
 
 spring:
     datasource:

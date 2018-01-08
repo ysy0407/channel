@@ -1,5 +1,8 @@
 package com.dongxin.channel.util.myenum;
 
+/**
+ * 返回码和返回信息枚举类
+ */
 public enum MyEnum {
 
     SCS_0000("0000", "操作成功"),
@@ -8,7 +11,7 @@ public enum MyEnum {
     ERR_1002("1002", "用户名或密码错误"),
     ERR_1003("1003", "验证码错误"),
     ERR_1004("1004", "未登录"),
-    ERR_1005("1005", "sada"),
+    ERR_1005("1005", "用户被冻结"),
     ERR_1006("1006", "adsda"),
     ;
 

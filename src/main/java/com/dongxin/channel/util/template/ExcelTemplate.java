@@ -4,10 +4,7 @@ import com.dongxin.channel.util.TemplateFileUtil;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.OutputStream;
+import java.io.*;
 import java.math.BigInteger;
 import java.util.*;
 
@@ -25,6 +22,9 @@ import java.util.*;
  **/
 
 public class ExcelTemplate {
+
+
+    private static DataFormatter formatter = new DataFormatter();
 
     /**
      * 数据行标识
@@ -253,7 +253,7 @@ public class ExcelTemplate {
         for(Row row:sheet) {
             for(Cell c:row) {
 //                if(c.getCellType()!=Cell.CELL_TYPE_STRING) continue;
-                String str = c.getStringCellValue().trim();
+                String str = formatter.formatCellValue(c);
                 if(str.startsWith("#")) {
                     if(datas.containsKey(str.substring(1))) {
                         c.setCellValue(datas.get(str.substring(1)));
@@ -271,7 +271,7 @@ public class ExcelTemplate {
         for(Row row:sheet) {
             for(Cell c:row) {
 //                if(c.getCellType()!=Cell.CELL_TYPE_STRING) continue;
-                String str = c.getStringCellValue().trim();
+                String str = formatter.formatCellValue(c);
                 if(str.startsWith("#")) {
                     if(prop.containsKey(str.substring(1))) {
                         c.setCellValue(prop.getProperty(str.substring(1)));
@@ -297,7 +297,7 @@ public class ExcelTemplate {
             if(findData) break;
             for(Cell c:row) {
 //                if(c.getCellType()!=Cell.CELL_TYPE_STRING) continue;
-                String str = c.getStringCellValue().trim();
+                String str = formatter.formatCellValue(c);
                 if(str.equals(SER_NUM)) {
                     serColIndex = c.getColumnIndex();
                     findSer = true;
@@ -326,7 +326,7 @@ public class ExcelTemplate {
         for(Row row:sheet) {
             for(Cell c:row) {
 //                if(c.getCellType()!=Cell.CELL_TYPE_STRING) continue;
-                String str = c.getStringCellValue().trim();
+                String str = formatter.formatCellValue(c);
                 if(str.equals(SER_NUM)) {
                     serColIndex = c.getColumnIndex();
                 }
@@ -341,7 +341,7 @@ public class ExcelTemplate {
         for(Row row:sheet) {
             for(Cell c:row) {
 //                if(c.getCellType()!=Cell.CELL_TYPE_STRING) continue;
-                String str = c.getStringCellValue().trim();
+                String str = formatter.formatCellValue(c);
                 if(str.equals(DEFAULT_STYLE)) {
                     defaultStyle = c.getCellStyle();
                 }

@@ -30,7 +30,10 @@ public class UserServiceImpl implements UserService {
         ChannelUserLogin userLogin = channelUserLoginMapper.selectByNameAndPWD(user);
         if(userLogin != null){
             return userLogin;
-        //用户名或密码错误
+            //用户已被冻结 不为0
+        }else if (!"0".equals(userLogin.getStatus())) {
+            throw new MyException(MyEnum.ERR_1005);
+            //用户名或密码错误
         }else{
             throw new MyException(MyEnum.ERR_1002);
         }
