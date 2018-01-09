@@ -2,6 +2,8 @@ package com.dongxin.channel.service.impl;
 
 import com.dongxin.channel.domain.BYJChannelInfoLog;
 import com.dongxin.channel.domain.ChannelUserLogin;
+import com.dongxin.channel.util.exception.MyException;
+import com.dongxin.channel.util.myenum.MyEnum;
 import com.github.pagehelper.PageInfo;
 import com.dongxin.channel.mapper.BYJChannelInfoLogMapper;
 import com.dongxin.channel.service.BYJChannelInfoLogService;
@@ -10,8 +12,6 @@ import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -28,7 +28,7 @@ public class BYJChannelInfoLogServiceImpl implements BYJChannelInfoLogService {
     private BYJChannelInfoLogMapper byjChannelInfoLogMapper;
 
     @Override
-    public PageInfo<BYJChannelInfoLog> selectBYJChannelLog(Integer id, String startDate, String endDate, int pageNo, int pageSize) {
+    public PageInfo<BYJChannelInfoLog> selectBYJChannelLog(Integer id, String startDate, String endDate, int pageNo, int pageSize) throws Exception {
         //获取当前时间的年份最后两个字段，月份，拼接作为需要联查的当月表
         String historyTable = "byjchannelinfolog"+startDate.substring(2,4)+startDate.substring(5,7);
         Map<String, Object> map = new HashMap<String, Object>();
@@ -43,7 +43,13 @@ public class BYJChannelInfoLogServiceImpl implements BYJChannelInfoLogService {
         map.put("first", "all");
         //分页
         PageHelper.startPage(pageNo, pageSize);
-        PageInfo pages = new PageInfo(byjChannelInfoLogMapper.selectBYJChannelLog(map));
+        PageInfo pages = null;
+        try {
+            pages = new PageInfo(byjChannelInfoLogMapper.selectBYJChannelLog(map));
+            //catch到错误，操作数据不存在
+        } catch (Exception e) {
+            throw new MyException(MyEnum.ERR_1006);
+        }
         return pages;
     }
 

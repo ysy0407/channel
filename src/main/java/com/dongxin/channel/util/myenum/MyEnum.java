@@ -12,7 +12,7 @@ public enum MyEnum {
     ERR_1003("1003", "验证码错误"),
     ERR_1004("1004", "未登录"),
     ERR_1005("1005", "用户被冻结"),
-    ERR_1006("1006", "adsda"),
+    ERR_1006("1006", "操作数据不存在"),
     ;
 
     MyEnum(String code, String msg) {

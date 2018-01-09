@@ -2,7 +2,7 @@ server:
   port: 8088  #端口
   context-path: /channel #项目访问路径
   session:
-    timeout: 1 #session超时时间 5分钟
+    timeout: 60 #session超时时间 60分钟
 
 spring:
     datasource:
@@ -26,5 +26,3 @@ spring:
         testOnReturn: false
         poolPreparedStatements: true
         maxOpenPreparedStatements: 20
-
-loginPath: http://www.baidu.com

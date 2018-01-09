@@ -141,6 +141,16 @@
 					<verbose>true</verbose>
 				</configuration>
 			</plugin>
+			<plugin>
+				<!--使maven编译时使用1.8JDK版本-->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
