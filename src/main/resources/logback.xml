@@ -1,31 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--日志控制介绍http://www.360doc.com/content/14/1016/15/8072791_417440479.shtml-->
 <configuration scan="true" scanPeriod="30 seconds">
 
-    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-        <encoder>
-            <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
-        </encoder>
-    </appender>
-
+    <!--把日志输出到控制台-->
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoder 默认配置为PatternLayoutEncoder -->
+        <!--日志问价输出形式-->
         <encoder>
-            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+            <pattern>
+                %date [%thread] %-5level %logger{36} %line line - %msg%n
             </pattern>
         </encoder>
     </appender>
 
+    <!--把日志文件添加到文件-->
     <appender name="logFile"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${catalina.base}/logs/e-service.log</file>
+        <!--日志文件保存为zip的位置-->
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <fileNamePattern>${catalina.base}/logs/e-service.%d{yyyy-MM-dd}.zip</fileNamePattern>
+            <!--每天生成一个日志文件,保存30天的日志-->
             <maxHistory>30</maxHistory>
         </rollingPolicy>
-
+        <!--日志文件保存格式-->
         <layout class="ch.qos.logback.classic.PatternLayout">
-            <Pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n</Pattern>
+            <!--logger{length}: 输出日志的logger name 的长度-->
+            <Pattern>%date [%thread] %-5level %logger{40} %line line - %msg%n</Pattern>
         </layout>
     </appender>
 

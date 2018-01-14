@@ -1,0 +1,7 @@
+FROM daocloud.io/nginx
+
+MAINTAINER YuSongYuan
+
+ENTRYPOINT ["-p", "8088:80", "/usr/sbin/nginx", "-g", "daemon off;"]
+
+EXPOSE 80

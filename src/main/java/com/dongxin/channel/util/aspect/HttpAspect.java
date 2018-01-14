@@ -29,6 +29,7 @@ public class HttpAspect {
 
     //不用拦截的方法或controller类
     private final static String[] NOT_ASPECT_CONTROLLER = {"com.dongxin.channel.controller.UserController.login",
+                                                            "com.dongxin.channel.controller.UserController.exit",
                                                             "com.dongxin.channel.controller.VaildCodeController"};
 
 

@@ -36,7 +36,7 @@ public class BYJChannelInfoLogController {
                                     @RequestParam("startDate") String startDate,
                                     @RequestParam("endDate") String endDate,
                                     @RequestParam("pageNo") int pageNo,
-                                    @RequestParam(value = "pageSize", required = false, defaultValue = "20") int pageSize){
+                                    @RequestParam(value = "pageSize", required = false, defaultValue = "20") int pageSize) throws Exception{
         PageInfo<BYJChannelInfoLog> pages = byjChannelInfoLogService.selectBYJChannelLog(id, startDate, endDate, pageNo, pageSize);
         //每页20个
         return  ResultUtil.success(pages);
